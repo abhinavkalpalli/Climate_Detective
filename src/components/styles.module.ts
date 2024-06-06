@@ -5,9 +5,12 @@ export const MainWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  ::placeholder {
+    color: white;
+  }
 
   .container {
-    background: linear-gradient( #87ceeb, #ffffff);
+    background: linear-gradient(to bottom, #4e89bf, #2b5797);
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
@@ -15,7 +18,7 @@ export const MainWrapper = styled.div`
     flex-direction: column;
     align-items: center;
     box-sizing: border-box;
-    color: rgba(0, 0, 0, 0.8);
+    color: white;
     max-width: 400px;
     width: 100%;
   }
@@ -30,7 +33,8 @@ export const MainWrapper = styled.div`
 
   .searchArea > input {
     outline: none;
-    border: 1px solid grey;
+    color:white;
+    border: 1px solid white;
     padding: 0.5rem;
     border-radius: 20px;
     text-align: center;
@@ -44,7 +48,7 @@ export const MainWrapper = styled.div`
   }
 
   .searchCircle {
-    border: 1px solid grey;
+    border: 1px solid white;
     width: 36px;
     height: 36px;
     border-radius: 50%;
@@ -53,10 +57,11 @@ export const MainWrapper = styled.div`
     align-items: center;
     cursor: pointer;
     transition: all 0.3s ease;
+    color:white
 
     > .searchIcon {
       font-size: 20px;
-      color: grey;
+      color: white;
     }
   }
 
@@ -101,11 +106,7 @@ export const MainWrapper = styled.div`
     width: 100%;
     font-family: "Josefin Sans", sans-serif;
     margin-top: 20px;
-    background: linear-gradient(
-      90deg,
-      rgba(243, 255, 253, 1) 0%,
-      rgba(253, 255, 232, 1) 100%
-    );
+    background: #333333; /* Dark grey background */
     border-radius: 12px;
     padding: 1rem;
   }
@@ -157,13 +158,12 @@ export const MainWrapper = styled.div`
 
   .home {
     font-size: 2.2rem;
-    color: black;
+    color: white;
     transition: color 0.3s ease;
-    cursor: pointer; 
-}
+    cursor: pointer;
+  }
 
-.home:hover {
-    color: blue; 
-}
-
+  .home:hover {
+    color: blue;
+  }
 `;

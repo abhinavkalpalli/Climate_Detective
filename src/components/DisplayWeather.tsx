@@ -77,23 +77,23 @@ function DisplayWeather() {
     switch (weather) {
       case "Rain":
         iconElement = <BsFillCloudRainFill />;
-        iconColor = "#2F4F4F";
+        iconColor = "#1E3A3A";
         break;
       case "Clear":
         iconElement = <BsFillSunFill />;
-        iconColor = "#FFC436";
+        iconColor = "#E6A806";
         break;
       case "Clouds":
         iconElement = <BsCloudyFill />;
-        iconColor = "#778899";
+        iconColor = "#5A6A75";
         break;
       case "Mist":
         iconElement = <BsCloudFog2Fill />;
-        iconColor = "#A9A9A9";
+        iconColor = "#898989";
         break;
       default:
         iconElement = <TiWeatherPartlySunny />;
-        iconColor = "#7B2869";
+        iconColor = "#641A57";
     }
     return (
       <span className="icon" style={{color:iconColor}}>
@@ -118,7 +118,7 @@ function DisplayWeather() {
       <h1 style={{ fontSize: "2.5rem", fontStyle: "italic" }}>Climate Detective</h1>
         <div className="searchArea">
           <FaHome className="home" onClick={halndleRefresh}/>
-          <input type="text" placeholder="Enter a city" value={searchCity} onChange={(e)=>setSearchCity(e.target.value)} />
+          <input type="text" placeholder="Enter a city" value={searchCity} onChange={(e)=>setSearchCity(e.target.value)} style={{color:'white'}} />
           <div className="searchCircle">
             <AiOutlineSearch className="searchIcon" onClick={handleSearch}/>
           </div>
